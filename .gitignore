@@ -1,0 +1,8 @@
+# Xcode
+xcuserdata/
+CFDI-Manager.xcworkspace/
+DerivedData/
+Pods/
+
+# Mac OS X Finder
+.DS_Store

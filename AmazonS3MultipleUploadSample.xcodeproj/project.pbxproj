@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06CCA7FC2273646600764DC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CCA7FB2273646600764DC3 /* AppDelegate.swift */; };
+		06CCA7FE2273646600764DC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CCA7FD2273646600764DC3 /* ViewController.swift */; };
+		06CCA8012273646600764DC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06CCA7FF2273646600764DC3 /* Main.storyboard */; };
+		06CCA8032273646700764DC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06CCA8022273646700764DC3 /* Assets.xcassets */; };
+		06CCA8062273646700764DC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06CCA8042273646700764DC3 /* LaunchScreen.storyboard */; };
+		06CCA80F2273648100764DC3 /* AmazonS3Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CCA80D2273648100764DC3 /* AmazonS3Manager.swift */; };
+		06CCA8102273648100764DC3 /* CustomDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CCA80E2273648100764DC3 /* CustomDirectory.swift */; };
+		06CCA812227369C800764DC3 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CCA811227369C800764DC3 /* NotificationService.swift */; };
+		06CCA81422736A2D00764DC3 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 06CCA81322736A2D00764DC3 /* awsconfiguration.json */; };
+		06CCA81722736B1F00764DC3 /* ProgressViewContainer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06CCA81522736B1F00764DC3 /* ProgressViewContainer.xib */; };
+		06CCA81822736B1F00764DC3 /* ProgressViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CCA81622736B1F00764DC3 /* ProgressViewContainer.swift */; };
+		15E739A87130CF274B3BD044 /* Pods_AmazonS3MultipleUploadSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27922DB4885885FCC5CF903F /* Pods_AmazonS3MultipleUploadSample.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		06CCA7F82273646600764DC3 /* AmazonS3MultipleUploadSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmazonS3MultipleUploadSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		06CCA7FB2273646600764DC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		06CCA7FD2273646600764DC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		06CCA8002273646600764DC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		06CCA8022273646700764DC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		06CCA8052273646700764DC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		06CCA8072273646700764DC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06CCA80D2273648100764DC3 /* AmazonS3Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmazonS3Manager.swift; sourceTree = "<group>"; };
+		06CCA80E2273648100764DC3 /* CustomDirectory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDirectory.swift; sourceTree = "<group>"; };
+		06CCA811227369C800764DC3 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		06CCA81322736A2D00764DC3 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		06CCA81522736B1F00764DC3 /* ProgressViewContainer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgressViewContainer.xib; sourceTree = "<group>"; };
+		06CCA81622736B1F00764DC3 /* ProgressViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressViewContainer.swift; sourceTree = "<group>"; };
+		27922DB4885885FCC5CF903F /* Pods_AmazonS3MultipleUploadSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmazonS3MultipleUploadSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		943A74096A13460DC2870E19 /* Pods-AmazonS3MultipleUploadSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazonS3MultipleUploadSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AmazonS3MultipleUploadSample/Pods-AmazonS3MultipleUploadSample.debug.xcconfig"; sourceTree = "<group>"; };
+		FD380B66A5E1FFF8CED577F5 /* Pods-AmazonS3MultipleUploadSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazonS3MultipleUploadSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-AmazonS3MultipleUploadSample/Pods-AmazonS3MultipleUploadSample.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06CCA7F52273646600764DC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15E739A87130CF274B3BD044 /* Pods_AmazonS3MultipleUploadSample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06CCA7EF2273646600764DC3 = {
+			isa = PBXGroup;
+			children = (
+				06CCA7FA2273646600764DC3 /* AmazonS3MultipleUploadSample */,
+				06CCA7F92273646600764DC3 /* Products */,
+				E3613B116600F3CE4D2EDFFD /* Pods */,
+				E196AE75A611A14529EE28F3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		06CCA7F92273646600764DC3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06CCA7F82273646600764DC3 /* AmazonS3MultipleUploadSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		06CCA7FA2273646600764DC3 /* AmazonS3MultipleUploadSample */ = {
+			isa = PBXGroup;
+			children = (
+				06CCA81922736C7000764DC3 /* Application */,
+				06CCA81A22736C8900764DC3 /* AmazonS3Manager */,
+				06CCA81B22736CA400764DC3 /* Modules */,
+				06CCA81D22736CBD00764DC3 /* Helpers */,
+				06CCA81E22736CC800764DC3 /* Resources */,
+			);
+			path = AmazonS3MultipleUploadSample;
+			sourceTree = "<group>";
+		};
+		06CCA81922736C7000764DC3 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				06CCA8042273646700764DC3 /* LaunchScreen.storyboard */,
+				06CCA7FB2273646600764DC3 /* AppDelegate.swift */,
+				06CCA8072273646700764DC3 /* Info.plist */,
+				06CCA81322736A2D00764DC3 /* awsconfiguration.json */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		06CCA81A22736C8900764DC3 /* AmazonS3Manager */ = {
+			isa = PBXGroup;
+			children = (
+				06CCA80D2273648100764DC3 /* AmazonS3Manager.swift */,
+				06CCA80E2273648100764DC3 /* CustomDirectory.swift */,
+			);
+			path = AmazonS3Manager;
+			sourceTree = "<group>";
+		};
+		06CCA81B22736CA400764DC3 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				06CCA81C22736CAE00764DC3 /* Main */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		06CCA81C22736CAE00764DC3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				06CCA81F22736CD500764DC3 /* Views */,
+				06CCA82022736CE500764DC3 /* Controllers */,
+				06CCA7FF2273646600764DC3 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		06CCA81D22736CBD00764DC3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				06CCA811227369C800764DC3 /* NotificationService.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		06CCA81E22736CC800764DC3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				06CCA8022273646700764DC3 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		06CCA81F22736CD500764DC3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				06CCA81622736B1F00764DC3 /* ProgressViewContainer.swift */,
+				06CCA81522736B1F00764DC3 /* ProgressViewContainer.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		06CCA82022736CE500764DC3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				06CCA7FD2273646600764DC3 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E196AE75A611A14529EE28F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27922DB4885885FCC5CF903F /* Pods_AmazonS3MultipleUploadSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E3613B116600F3CE4D2EDFFD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				943A74096A13460DC2870E19 /* Pods-AmazonS3MultipleUploadSample.debug.xcconfig */,
+				FD380B66A5E1FFF8CED577F5 /* Pods-AmazonS3MultipleUploadSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		06CCA7F72273646600764DC3 /* AmazonS3MultipleUploadSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06CCA80A2273646700764DC3 /* Build configuration list for PBXNativeTarget "AmazonS3MultipleUploadSample" */;
+			buildPhases = (
+				E9718E8A4247B08084408541 /* [CP] Check Pods Manifest.lock */,
+				06CCA7F42273646600764DC3 /* Sources */,
+				06CCA7F52273646600764DC3 /* Frameworks */,
+				06CCA7F62273646600764DC3 /* Resources */,
+				D475C91A8DC8803A7AEE8656 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AmazonS3MultipleUploadSample;
+			productName = AmazonS3MultipleUploadSample;
+			productReference = 06CCA7F82273646600764DC3 /* AmazonS3MultipleUploadSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		06CCA7F02273646600764DC3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = manuelbulos;
+				TargetAttributes = {
+					06CCA7F72273646600764DC3 = {
+						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 06CCA7F32273646600764DC3 /* Build configuration list for PBXProject "AmazonS3MultipleUploadSample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 06CCA7EF2273646600764DC3;
+			productRefGroup = 06CCA7F92273646600764DC3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				06CCA7F72273646600764DC3 /* AmazonS3MultipleUploadSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		06CCA7F62273646600764DC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06CCA81422736A2D00764DC3 /* awsconfiguration.json in Resources */,
+				06CCA8062273646700764DC3 /* LaunchScreen.storyboard in Resources */,
+				06CCA81722736B1F00764DC3 /* ProgressViewContainer.xib in Resources */,
+				06CCA8032273646700764DC3 /* Assets.xcassets in Resources */,
+				06CCA8012273646600764DC3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D475C91A8DC8803A7AEE8656 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AmazonS3MultipleUploadSample/Pods-AmazonS3MultipleUploadSample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSMobileClient/AWSMobileClient.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSS3/AWSS3.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProvider.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProviderASF.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMobileClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSS3.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AmazonS3MultipleUploadSample/Pods-AmazonS3MultipleUploadSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9718E8A4247B08084408541 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AmazonS3MultipleUploadSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06CCA7F42273646600764DC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06CCA8102273648100764DC3 /* CustomDirectory.swift in Sources */,
+				06CCA80F2273648100764DC3 /* AmazonS3Manager.swift in Sources */,
+				06CCA7FE2273646600764DC3 /* ViewController.swift in Sources */,
+				06CCA812227369C800764DC3 /* NotificationService.swift in Sources */,
+				06CCA7FC2273646600764DC3 /* AppDelegate.swift in Sources */,
+				06CCA81822736B1F00764DC3 /* ProgressViewContainer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		06CCA7FF2273646600764DC3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06CCA8002273646600764DC3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		06CCA8042273646700764DC3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06CCA8052273646700764DC3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		06CCA8082273646700764DC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		06CCA8092273646700764DC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		06CCA80B2273646700764DC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 943A74096A13460DC2870E19 /* Pods-AmazonS3MultipleUploadSample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39H65QV622;
+				INFOPLIST_FILE = "$(SRCROOT)/AmazonS3MultipleUploadSample/Application/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.manuelbulos.AmazonS3MultipleUploadSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		06CCA80C2273646700764DC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD380B66A5E1FFF8CED577F5 /* Pods-AmazonS3MultipleUploadSample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39H65QV622;
+				INFOPLIST_FILE = "$(SRCROOT)/AmazonS3MultipleUploadSample/Application/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.manuelbulos.AmazonS3MultipleUploadSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06CCA7F32273646600764DC3 /* Build configuration list for PBXProject "AmazonS3MultipleUploadSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06CCA8082273646700764DC3 /* Debug */,
+				06CCA8092273646700764DC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06CCA80A2273646700764DC3 /* Build configuration list for PBXNativeTarget "AmazonS3MultipleUploadSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06CCA80B2273646700764DC3 /* Debug */,
+				06CCA80C2273646700764DC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 06CCA7F02273646600764DC3 /* Project object */;
+}
